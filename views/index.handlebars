@@ -6,7 +6,7 @@
         <h2>Me so hungry!</h2>
         <ul>
             {{#each burger_name}}
-            {{#unless eaten}}
+            {{#unless devoured}}
             {{> burger-block devoured=false}}
             {{/unless}}
             {{/each}}
@@ -18,7 +18,7 @@
 
         <ul>
             {{#each burger_name}}
-            {{#unless eaten}}
+            {{#unless devoured}}
             {{> burger-block devoured=true}}
             {{/unless}}
             {{/each}}
