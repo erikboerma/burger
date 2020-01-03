@@ -4,7 +4,7 @@ $(function () {
         event.preventDefault();
 
         var newBurger = {
-            name: $("#burger_name").val().trim(),
+            burger_name: $("#burgers").val().trim(),
             devoured: "0"
         };
 
