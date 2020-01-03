@@ -1,11 +1,11 @@
 <div class="container">
 
     <h1>Burger Time!</h1>
-
+<div class="row">
     <div class="col-md-4">
         <h2>Me so hungry!</h2>
         <ul>
-            {{#each burgers}}
+            {{#each burger_name}}
             {{#unless eaten}}
             {{> burger-block devoured=false}}
             {{/unless}}
@@ -17,12 +17,13 @@
         <h2>Me so full!</h2>
 
         <ul>
-            {{#each burgers}}
+            {{#each burger_name}}
             {{#unless eaten}}
             {{> burger-block devoured=true}}
             {{/unless}}
             {{/each}}
         </ul>
+    </div>
     </div>
     <div class="col-md-4">
 
