@@ -1,4 +1,4 @@
-var connection = require("../config/connection.js");
+var connection = require("../config/connection");
 
 
 function printQuestionMarks(num) {
@@ -11,7 +11,7 @@ function printQuestionMarks(num) {
     return arr.toString();
 }
 
-function objToSql(ob) {
+function objToSQL(ob) {
     var arr = [];
 
     for (var key in ob) {
@@ -62,7 +62,7 @@ var orm = {
       var queryString = "UPDATE " + table;
   
       queryString += " SET ";
-      queryString += objToSql(objColVals);
+      queryString += objToSQL(objColVals);
       queryString += " WHERE ";
       queryString += condition;
   
