@@ -16,7 +16,7 @@ $(function () {
         }).then(
             function () {
                 console.log("new burger added");
-                location.reload();
+                // location.reload();
             }
         );
     });
