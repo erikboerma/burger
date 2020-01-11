@@ -6,8 +6,13 @@
             <h2>Me so hungry!</h2>
             <ul>
                 {{#each burgers}}
-                {{#unless eaten}}
-                {{> burger-block devoured=false}}
+                {{#unless this.devoured}}
+                <p>
+                    {{this.name}}
+                </p>
+                    <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
+
+                {{!-- {{> burger-block devoured=true}} --}}
                 {{/unless}}
                 {{/each}}
             </ul>
@@ -18,8 +23,13 @@
 
             <ul>
                 {{#each burgers}}
-                {{#if eaten}}
-                {{> burger-block devoured=true}}
+                {{#if this.devoured}}
+                {{!-- {{> burger-block devoured=false}} --}}
+                <p>
+                    {{this.name}}
+                </p>
+
+                
                 {{/if}}
                 {{/each}}
             </ul>
@@ -28,7 +38,7 @@
     <div class="col-md-4">
 
         <h2>Add a Burger</h2>
-        <form class="create-form">
+        <form class="create-form" method="POST" action="/api/burgers">
 
             <div class="form-group">
                 <label for="burger">Burger Name:</label>
