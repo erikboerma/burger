@@ -1,21 +1,39 @@
 <div class="container">
 
-    <h1>Burger Time!</h1>
+    <h1 id="title">Burger Time!</h1>
+    <br>
     <div class="row">
         <div class="col-md-4">
-            <h2>Me so hungry!</h2>
-            <ul>
-                {{#each burgers}}
-                {{#unless this.devoured}}
-                <p>
-                    {{this.name}}
-                </p>
-                    <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Me so hungry!</h2>
+                    <ul>
+                        {{#each burgers}}
+                        {{#unless this.devoured}}
+                        <p>
+                            {{this.name}}
+                        </p>
+                        <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
 
-                {{!-- {{> burger-block devoured=true}} --}}
-                {{/unless}}
-                {{/each}}
-            </ul>
+                        {{!-- {{> burger-block devoured=true}} --}}
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+
+                    <h2>Add a Burger</h2>
+                    <form class="create-form" method="POST" action="/api/burgers">
+
+                        <div class="form-group">
+                            <label for="burger">Burger Name:</label>
+                            <input type="text" id="burger" name="name">
+                            <button type="submit">Add Burger</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="col-md-4">
 
@@ -29,22 +47,11 @@
                     {{this.name}}
                 </p>
 
-                
+
                 {{/if}}
                 {{/each}}
             </ul>
         </div>
     </div>
-    <div class="col-md-4">
 
-        <h2>Add a Burger</h2>
-        <form class="create-form" method="POST" action="/api/burgers">
-
-            <div class="form-group">
-                <label for="burger">Burger Name:</label>
-                <input type="text" id="burger" name="name">
-                <button type="submit">Add Burger</button>
-            </div>
-        </form>
-    </div>
 </div>
