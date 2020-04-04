@@ -1,0 +1,5 @@
+#devouredList {
+    height: 500px;
+    overflow: scroll;
+    color: brown;
+}
