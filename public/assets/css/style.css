@@ -3,3 +3,14 @@
     overflow: scroll;
     color: brown;
 }
+
+.addBurger {
+    width: 300px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.burgerContainer {
+    flex-direction: column;
+    align-items: center;
+}
