@@ -30,7 +30,7 @@
   flex-direction: column;
 }
 
-h2 {
+.h2 {
     font: bold;
     text-decoration: underline;
 }
@@ -57,7 +57,6 @@ button {
 #burgerTitle {
     width: 50px;
     height: 50px;
-    flex-direction: row;
 }
 
 #titleRow {

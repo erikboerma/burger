@@ -12,7 +12,7 @@
 
                 <div class="col-md-6 ">
                     <div class="addBurger">
-                        <h2>Add a Burger</h2>
+                        <h2 class="h2">Add a Burger</h2>
                         <form class="create-form" method="POST" action="/api/burgers">
 
                             <div class="form-group">
@@ -25,7 +25,7 @@
                 </div>
                 <br>
                 <div class="addBurger">
-                    <h2>Time to eat!</h2>
+                    <h2 class="h2">Time to eat!</h2>
                     <ul>
                         {{#each burgers}}
                         {{#unless this.devoured}}
@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-5 devoured">
 
-            <h2>Me so full!</h2>
+            <h2><img id="burgerTitle" src="/assets/images/burgerGoofie.jpeg"> Me so full!</h2>
 
             <ul id="devouredList">
                 {{#each burgers}}
