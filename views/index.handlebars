@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-5 devoured">
 
-            <h2 class="h2"><img id="burgerTitle" src="/assets/images/burgerGoofie.jpeg"> Me so full!</h2>
+            <h2><img id="burgerTitle" src="/assets/images/burgerGoofie.jpeg"> Me so full!</h2>
 
             <ul id="devouredList">
                 {{#each burgers}}
@@ -53,6 +53,8 @@
                 <p>
                     {{this.name}}
                 </p>
+                <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
+
 
 
                 {{/if}}
