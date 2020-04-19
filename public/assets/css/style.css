@@ -54,9 +54,9 @@ button {
 }
 
 #burgers {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 75%;
-    align-items: center;
+align-items: flex-start;
 }
 
 #burgerTitle {

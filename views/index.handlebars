@@ -31,8 +31,8 @@
                         {{#unless this.devoured}}
                         <p id="burgers">
                             {{this.name}}
-                        </p>
                         <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
+                        </p>
 
                         {{!-- {{> burger-block devoured=true}} --}}
                         {{/unless}}
@@ -53,7 +53,7 @@
                 <p>
                     {{this.name}}
                 </p>
-                <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
+                {{!-- <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button> --}}
 
 
 
