@@ -37,7 +37,7 @@ body {
 
 .h2 {
     font: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 button {
