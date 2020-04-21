@@ -53,11 +53,11 @@ button {
     width: 200px;
 }
 
-#burgers {
+/* #burgers { */
     /* border: 1px solid blue; */
-    width: 75%;
-align-items: flex-start;
-}
+    /* width: 75%; */
+/* align-items: flex-start; */
+/* } */
 
 #burgerTitle {
     width: 50px;
