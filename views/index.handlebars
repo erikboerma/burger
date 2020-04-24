@@ -1,7 +1,8 @@
 <div class="container">
     <div id="titleRow">
-        
-        <h1 id="title"><img id="burgerTitle" src="/assets/images/burger.jpeg">Burger Time!<img id="burgerTitle" src="/assets/images/burger.jpeg"></h1>
+
+        <h1 id="title"><img id="burgerTitle" src="/assets/images/burger.jpeg">Burger Time!<img id="burgerTitle"
+                src="/assets/images/burger.jpeg"></h1>
     </div>
     <br>
     <div class="row">
@@ -22,28 +23,29 @@
                             </div>
                         </form>
                     </div>
-                </div>
-                <br>
-                <div class="addBurger">
-                    <h2 class="h2">Time to eat!</h2>
-                    <ul>
-                        {{#each burgers}}
-                        {{#unless this.devoured}}
-                        <p id="burgers">
-                            {{this.name}}
-                        <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
-                        </p>
+                    <br>
+                    <div class="addBurger">
+                        <h2 class="h2">Time to eat!</h2>
+                        <ul>
+                            {{#each burgers}}
+                            {{#unless this.devoured}}
+                            <p id="burgers">
+                                {{this.name}}
+                                <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
+                            </p>
 
-                        {{!-- {{> burger-block devoured=true}} --}}
-                        {{/unless}}
-                        {{/each}}
-                    </ul>
+                            {{!-- {{> burger-block devoured=true}} --}}
+                            {{/unless}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                    {{!-- </div> --}}
                 </div>
-                {{!-- </div> --}}
+
             </div>
         </div>
         <div class="col-md-5 devoured">
-                
+
             <h2><img id="burgerTitle" src="/assets/images/burger.jpeg"> Me so full!</h2>
 
             <ul id="devouredList">
