@@ -37,7 +37,6 @@ body {
 
 .h2 {
     font: bold;
-    /* text-decoration: underline; */
 }
 
 button {
@@ -52,12 +51,6 @@ button {
     border-radius: 10px;
     width: 200px;
 }
-
-/* #burgers { */
-    /* border: 1px solid blue; */
-    /* width: 75%; */
-/* align-items: flex-start; */
-/* } */
 
 #burgerTitle {
     width: 50px;
