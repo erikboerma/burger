@@ -34,7 +34,6 @@
                                 <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button>
                             </p>
 
-                            {{!-- {{> burger-block devoured=true}} --}}
                             {{/unless}}
                             {{/each}}
                         </ul>
@@ -50,13 +49,9 @@
             <ul id="devouredList">
                 {{#each burgers}}
                 {{#if this.devoured}}
-                {{!-- {{> burger-block devoured=false}} --}}
                 <p>
                     {{this.name}}
                 </p>
-                {{!-- <button class="eat" data-id="{{this.id}}" data-neweaten="{{devour}}">Devour!</button> --}}
-
-
 
                 {{/if}}
                 {{/each}}

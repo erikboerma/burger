@@ -3,7 +3,6 @@ body {
 }
 
 .container {
-    /* border: 2px solid lightgray; */
     border-radius: 10px;
     margin-top: 100px;
     height: 600px;
