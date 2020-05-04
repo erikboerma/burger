@@ -42,6 +42,8 @@ body {
 
 .h2 {
     font: bold;
+    text-decoration: underline;
+    
 }
 
 button {
